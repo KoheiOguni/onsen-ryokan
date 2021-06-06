@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body class="reserve-body">
+  <header class="header">
+      <div class="header-fixed">
+          <h1 class="header-logo"><img src="image/logo.png" alt="極楽亭"></h1>
+          <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav header-nav" id="nav">
+          <nav class="nav-wrap">
+              <ul class="nav-list">
+                  <li class="item"><a href="index.html">ホーム</a></li>
+                  <li class="item"><a href="reservation.html">宿泊予約</a></li>
+                  <li class="item"><a href="index.html#info">観光情報</a></li>
+                  <li class="item"><a href="index.html#faq">よくあるご質問</a></li>
+                  <li class="item"><a href=contact.html>お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <form action="reservation.php" method="post" class="reserve">
+    <div class="elem-group">
+      <h1 class="reserve-title">宿泊予約</h1>
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="visitor_name" placeholder="木村 太朗" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="taro.kimura@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">電話番号</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="090-2348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">大人</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">子ども</label>
+      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">チェックイン日</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">チェックアウト日</label>
+      <input type="date" id="checkout-date" name="checkout" required>
+    </div>
+    <div class="elem-group">
+      <label for="room-selection">部屋選択</label>
+      <select id="room-selection" name="room_preference" required>
+          <option value="">リストから部屋を選ぶ</option>
+          <option value="connecting">扇の間</option>
+          <option value="adjoining">桜の間</option>
+          <option value="adjacent">薔薇の間</option>
+      </select>
+    </div>
+    <hr>
+    <div class="elem-group">
+      <label for="message">その他問い合わせ事項</label>
+      <textarea id="message" name="visitor_message" placeholder="何か気になる点等ございましたらお問い合わせ下さい" required></textarea>
+    </div>
+      <button class="submit" type="submit">予約</button>
+    </form>
+  </body>
+

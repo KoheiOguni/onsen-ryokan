@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+      <div class="header-fixed">
+          <h1 class="header-logo"><img src="image/logo.png" alt="極楽亭"></h1>
+          <button class="nav-btn" id="nav-btn" type="button" aria-label="メニュー"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav header-nav" id="nav">
+          <nav class="nav-wrap">
+              <ul class="nav-list">
+                  <li class="item"><a href="index.html">ホーム</a></li>
+                  <li class="item"><a href="reservation.html">宿泊予約</a></li>
+                  <li class="item"><a href="index.html#info">観光情報</a></li>
+                  <li class="item"><a href="index.html#faq">よくあるご質問</a></li>
+                  <li class="item"><a href=contact.html>お問い合わせ</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <div class="contact-top">
+    <h1>お問い合わせ</h1>
+    <div class="Form">
+      <div class="Form-Item">
+        <p class="Form-Item-Label">
+          <span class="Form-Item-Label-Required">必須</span>会社名
+        </p>
+        <input type="text" class="Form-Item-Input" placeholder="例）株式会社日本">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+        <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+        <input type="email" class="Form-Item-Input" placeholder="例）yamada@gmail.com">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+        <textarea class="Form-Item-Textarea"></textarea>
+      </div>
+      <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+  </div>
+
+</body>
