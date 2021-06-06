@@ -818,7 +818,7 @@ img {
   }
 }
 .reserve-body {
-  background-image: url(../../image/rec-plan01.png);
+  background-image: url(../image/rec-plan01.png);
   background-position: center center;
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
